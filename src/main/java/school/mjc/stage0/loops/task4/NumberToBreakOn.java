@@ -9,10 +9,10 @@ public class NumberToBreakOn {
             }
         }else {
             for (int i = 1; i < numberToGoUntil; i++){
-                if (i == numberToGoUntil){
+                System.out.println(i);
+                if (i == toBreakWith){
                     break;
                 }
-                System.out.println(i);
             }
         }
     }
