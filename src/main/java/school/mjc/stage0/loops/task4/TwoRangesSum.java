@@ -10,18 +10,16 @@ public class TwoRangesSum {
             System.out.println("last number in row is negative");
         } else {
             for (int i = 1; i < lastInRow; i++){
+                skipped += i;
                 if (i == numberToSkip){
                     break;
                 }
-                counted += i;
-            }
-            for (int i = numberToSkip; i < lastInRow; i++){
 
-                skipped += i;
+            }
+            for (int i = numberToSkip+1; i <= lastInRow; i++)
+            counted += i;
             }
         }
-        System.out.println("skipped sum is " + skipped);
-        System.out.println("counted sum is " + counted);
+
 
     }
-}
